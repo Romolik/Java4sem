@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="470.0" maxWidth="850.0" minHeight="470.0" minWidth="850.0" prefHeight="470.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.ru.nsu.shchiptsov.Pacman.MainWindow">
+    <children>
+      <Pane fx:id="paneContainers" prefHeight="470.0" prefWidth="850.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+              <ImageView fitHeight="480.0" fitWidth="850.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@MainMenu.png" />
+                  </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+              </ImageView>
+            <VBox layoutX="348.0" layoutY="309.0" prefHeight="120.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="newGameButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="New Game">
+                     <font>
+                        <Font name="AppleMyungjo Regular" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="recordsButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Top scores">
+                     <font>
+                        <Font name="AppleMyungjo Regular" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="exitButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Exit">
+                     <font>
+                        <Font name="AppleMyungjo Regular" size="22.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

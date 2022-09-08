@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.Button?>
+<AnchorPane maxHeight="470.0" maxWidth="850.0" minHeight="470.0"
+            minWidth="850.0" prefHeight="470.0" prefWidth="850.0"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.ru.nsu.shchiptsov.Pacman.LevelWindowController">
+   <children>
+      <Pane prefHeight="470.0" prefWidth="850.0">
+         <children>
+            <ImageView fitHeight="480.0" fitWidth="850.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MainMenu.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <ComboBox fx:id="levelsComboBox" layoutX="375.0" layoutY="350.0" maxHeight="30.0" maxWidth="100.0" minHeight="30.0" minWidth="100.0" prefHeight="30.0" prefWidth="100.0" promptText="Levels" style="-fx-background-color: transparent;" />
+            <Label fx:id="labelForChooseLevels" layoutX="325.0" layoutY="268.0" text="Choose a game level">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="backButton" layoutX="14.0" layoutY="353.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Back">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="30.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
